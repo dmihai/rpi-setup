@@ -7,7 +7,7 @@ sudo raspi-config
 sudo apt update
 sudo apt upgrade
 
-sudo apt install vim git python3-pip
+sudo apt install vim git python3-pip python3-mysqldb
 
 sudo mkdir /mnt/nas
 
@@ -22,3 +22,4 @@ sudo mount -a
 # python libs install
 pip install pandas
 pip install matplotlib
+pip install mysql-connector-python
