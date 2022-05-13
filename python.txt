@@ -1,0 +1,24 @@
+# initial setup for raspberry pi
+# - set hostname
+# - enable ssh
+# - set timezone
+sudo raspi-config
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install vim git python3-pip
+
+sudo mkdir /mnt/nas
+
+# mount NAS partition
+sudo vim /etc/fstab
+
+# add the following to /etc/fstab
+# 192.168.1.50:/volume1/disk1 /mnt/nas nfs defaults 0 0
+
+sudo mount -a
+
+# python libs install
+pip install pandas
+pip install matplotlib
