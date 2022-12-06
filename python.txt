@@ -24,3 +24,4 @@ pip install pandas
 pip install matplotlib
 pip install mysql-connector-python
 pip install psutil
+pip install requests
